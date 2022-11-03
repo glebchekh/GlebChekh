@@ -1,0 +1,58 @@
+body {
+  font-size: 3vh;/* Звернути увагу */
+  font-family: Nunito Sans;/* Звернути увагу */
+}
+.container{
+  height: 100vh;
+  margin: 0px 8vw 0px 8vw;
+  position: relative;
+  display: flex;
+  /*background-color: yellow;*/
+  }
+ 
+.container_item img{ 
+  width: 25vw;
+  margin: 1vw 1vw 1vw 1vw;
+  border-radius: 50%;
+  }
+
+
+.item_1{
+  width: 35%;
+  height: auto;
+  /*background-color: green;*/
+  }
+
+.item_2{
+  width: 65%;
+  height: auto;
+  /*background-color: #8383D7;*/
+  }
+
+/*FOLLOW ME*/
+.social{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  float: left;
+  margin: 0.5vw;
+  }
+.instagram{
+  background-color: #FED804;
+  }
+.telegram{
+  background-color: #12B9F0;
+ 
+  }
+.youtube{
+  background-color: #FA3939;
+  }
+.pinterest{
+  background-color: #FA3939;
+  }
+
+  /*FOLLOW ME*/
+
+
+
