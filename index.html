@@ -1,9 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Gleb Chekh site card</title>
-		<meta charset="utf-8">
-		<link rel="stylesheet" href="СSS/normalize.css.css">
+			<meta charset="utf-8">
+
+			<meta name="description" content="Site description">
+	
+			<meta name="keywords" content="keywords there">
+
+			<link rel="shortcut icon" href="/images/favicon.png (or ico?)" type="image/x-icon" />
+
+			<script src="js/javascript.js"></script>
+
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+			
+
+			<link rel="stylesheet" type="text/css" href="СSS/style.css">
+			<link rel="stylesheet" href="СSS/normalize.css.css">
+			<title>Gleb Chekh site card</title>
+		
+		
 		<link rel="stylesheet" href="СSS/style.css">
 	</head>
 	<body>
@@ -41,19 +56,16 @@ View my: <a href="https://www.behance.net/glibchekh" target=”_blank”>Portfol
 
 <a href="https://ru.pinterest.com/glebchekh/_saved/" target=”_blank”><div class="social pinterest"></div></a>
 <br>
-<p>Write  me</p>
-<form action=”mailto:glebchekh@gmail.com” method=”POST” enctype=”text/plain” name=”EmailForm”>
-
-
-<label for="name">Name:</label><br>
-<input type="text" id="name" name="name"><br>
-
-
-<label for="ContactCommentt">Message:</label><br>
-<textarea id=”ContactCommentt” rows=”6″ cols=”20″>
-</textarea>
-<input type="submit" value="Send">
+<!-- SEND FORM -->
+<form onsubmit="sendEmail(); reset(); return false"><h2>Write to me</h2>
+<input type="text" placeholder="Your name" id="name" required>
+<input type="email" placeholder="Email id" id="name" required>
+<textarea id="message" rows="4" placeholder="How can i halp you ?"></textarea>
+<button type="submit"> Send</button>
 </form>
+
+
+<!-- SEND FORM -->
 	</div>			
 		</main>
 		<!-- MAIN SECTION-->
@@ -62,6 +74,28 @@ View my: <a href="https://www.behance.net/glibchekh" target=”_blank”>Portfol
 			
 		</footer>
 		<!-- FOOTER -->
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<script type="text/javascript">
+			function sendEmail() {
+			Email.send({
+				Email.send({
+						SecureToken:"58de2f2c-1947-4447-a2f9-7e082ffdcbed"
+					    To : 'glebchekh@gmail.com',
+					    From : document.getElementById("email").value,
+					    Subject : "New contact form equired",
+					    Body : "Name: "
+							+document.getElementById("name").nodeValue
+							+"<br> Email: "+ document.getElementById("email").value	
+							+"<br> Message: "+ document.getElementById("message").value					
+						}).then(
+					  		message => alert("Message Sent Succesfully")
+					);
+								})
+			}
+		</script>
 	</body>
 </html>
+
+
+
 
