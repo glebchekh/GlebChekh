@@ -1,3 +1,3 @@
-/*contact form*/
 
-/*contact form*/
+var a ='Hello'
+alert(a);
