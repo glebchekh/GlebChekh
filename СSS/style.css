@@ -176,7 +176,7 @@ body,html {
   }
 
     .item_2 h1{
-    text-align: center;
+    text-align: left;
     font-size:  1.3rem;
     text-indent: 0;
   }
@@ -187,8 +187,14 @@ body,html {
     text-indent: 2;
   }
   .translate_block{
-    
-    font-size: 0.1rem;}
+    position: absolute;
+    right: 0;
+    font-size: 0.1rem;
+    display: inline-block;
+  }
+  .translate img{
+      width: 1.5rem;
+    }
 
   .item_2 h2{
     font-size: 1rem;
