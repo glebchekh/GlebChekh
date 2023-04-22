@@ -18,7 +18,10 @@
 			
 			<link rel="stylesheet" type="text/css" href="СSS/style.css">
 			<link rel="stylesheet" type="text/css" href="СSS/normalize.css.css">
+
 			<!-- <link rel="stylesheet" type="text/css" href="СSS/reset.css.css"> -->
+
+			<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
 
 			<title>Gleb Chekh site card</title>	
 	</head>
@@ -27,8 +30,26 @@
 		<!-- MAIN SECTION-->
 			<main class="container">
 			<!-- Item_1 -->
-				<div class="container_item item_1"><img src="Images/Photo2.jpg" alt="Beautiful face">
+			<div class="container_item item_1">
+			<section>
+				<!-- Swiper -->
+				<div class="swiper-container">
+				  <div class="swiper-wrapper">
+				    <div class="swiper-slide"><img src="Images/Photo2.jpg" alt=""> </div>
+				    <div class="swiper-slide"><img src="Images/Photo1.jpg" alt=""> </div>
+				    <div class="swiper-slide"><img src="Images/Photo3.jpg" alt=""> </div>
+				    
+				  </div>
+				  <!-- Pagination -->
+				  <div class="swiper-pagination"></div>
+				  <!-- Arrows -->
+				  <div class="swiper-button-next"></div>
+				  <div class="swiper-button-prev"></div>
 				</div>
+				  
+				</section>
+			</div>
+ 
 			<!-- Item_1 -->
 			<!-- Item_2 -->
 				<div class="container_item item_2" >
@@ -80,18 +101,22 @@
 			
 			</footer>
 		<!-- FOOTER -->
-
 		</div>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
+		<script  src=" js/javascript.js">
+		</script>
+		<script type="text/javascript">
+					function copyToClipboard(element) {
+			  var $temp = $("<input>");
+			  $("body").append($temp);
+			  $temp.val($(element).text()).select();
+			  document.execCommand("copy");
+			  $temp.remove();
+			}
+		</script>
+
 	</body>
-	<script type="text/javascript">
-		function copyToClipboard(element) {
-  var $temp = $("<input>");
-  $("body").append($temp);
-  $temp.val($(element).text()).select();
-  document.execCommand("copy");
-  $temp.remove();
-}
-	</script>
+
 
 </html>
 
