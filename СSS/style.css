@@ -39,7 +39,7 @@ body,html {
       display: inline-block;
     }
       .translate_block{
-      text-align: center;
+    text-align: center;
       position: absolute;
       right:5%;
       font-size: 2vh;
