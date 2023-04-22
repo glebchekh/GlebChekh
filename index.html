@@ -21,7 +21,7 @@
 
 			<!-- <link rel="stylesheet" type="text/css" href="СSS/reset.css.css"> -->
 
-			<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
+		
 
 			<title>Gleb Chekh site card</title>	
 	</head>
@@ -30,24 +30,34 @@
 		<!-- MAIN SECTION-->
 			<main class="container">
 			<!-- Item_1 -->
-			<div class="container_item item_1">
-			<section>
-				<!-- Swiper -->
-				<div class="swiper-container">
-				  <div class="swiper-wrapper">
-				    <div class="swiper-slide"><img src="Images/Photo2.jpg" alt=""> </div>
-				    <div class="swiper-slide"><img src="Images/Photo1.jpg" alt=""> </div>
-				    <div class="swiper-slide"><img src="Images/Photo3.jpg" alt=""> </div>
-				    
-				  </div>
-				  <!-- Pagination -->
-				  <div class="swiper-pagination"></div>
-				  <!-- Arrows -->
-				  <div class="swiper-button-next"></div>
-				  <div class="swiper-button-prev"></div>
-				</div>
-				  
-				</section>
+				<div class="container_item item_1">
+				<div class="slider-container">
+		  <div class="slider">
+		    <div class="slides">
+		      <div id="slides__1" class="slide">
+		        <img src="Images/Photo2.jpg">
+		        <a class="slide__prev" href="#slides__4" title="Next"></a>
+		        <a class="slide__next" href="#slides__2" title="Next"></a>
+		      </div>
+		      <div id="slides__2" class="slide">
+		        <img src="Images/Photo1.jpg">
+		        <a class="slide__prev" href="#slides__1" title="Prev"></a>
+		        <a class="slide__next" href="#slides__3" title="Next"></a>
+		      </div>
+		      <div id="slides__3" class="slide">
+		        <img src="Images/Photo3.jpg">
+		        <a class="slide__prev" href="#slides__2" title="Prev"></a>
+		        <a class="slide__next" href="#slides__4" title="Next"></a>
+		      </div>
+		    </div>
+		    <div class="slider__nav">
+		      <a class="slider__navlink" href="#slides__1"></a>
+		      <a class="slider__navlink" href="#slides__2"></a>
+		      <a class="slider__navlink" href="#slides__3"></a>
+		      
+		    </div>
+		 	 </div>
+		</div>
 			</div>
  
 			<!-- Item_1 -->
@@ -62,9 +72,9 @@
 						<h1>Welcome!</h1>
 					
 						<p>Im <b>Gleb Chekh </b>UI/UX, product designer from Kiev - Ukraine</p>
-						<p><span style="color: #12B9F0 "><strong>Curent job:</strong></span>   Wearhouse ceeper in Obag Ukraine.</p> 
+						<p><span style="color: #12B9F0 "><strong>Current job:</strong></span>   Wearhouse keeper in Obag Ukraine.</p> 
 						<p><span style="color:#FA3939 "><strong>Search:</strong></span> Part time, distant work as UI/UX, Product designer.</p> 
-						<p><span style="color: #FED804"><strong>Learn:</strong></span> UI/UX designe and Front-End development.</p> 
+						<p><span style="color: #FED804"><strong>Learn:</strong></span> UI/UX design and Front-End development.</p> 
 						<p><span  style="color: #12B9F0 "><strong>Interested in:</strong></span>  Creating website design, logo, merch design.</p> 
 						<p><span style="color:#FA3939 "><strong>Now:</strong></span> Worked on this site.
 						</p>
@@ -102,9 +112,7 @@
 			</footer>
 		<!-- FOOTER -->
 		</div>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
-		<script  src=" js/javascript.js">
-		</script>
+		
 		<script type="text/javascript">
 					function copyToClipboard(element) {
 			  var $temp = $("<input>");

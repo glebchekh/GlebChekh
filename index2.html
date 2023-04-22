@@ -17,7 +17,7 @@
 			
 			<link rel="stylesheet" type="text/css" href="СSS/style.css">
 			<link rel="stylesheet" href="СSS/normalize.css.css">
-			<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css'>
+	
 			<title>Чех Гліб Сайт-візитівка</title>
 	
 	</head>
@@ -26,24 +26,35 @@
 		<!-- MAIN SECTION-->
 		<main class="container">
 			<div class="container_item item_1">
-				<section>
-				<!-- Swiper -->
-				<div class="swiper-container">
-				  <div class="swiper-wrapper">
-				    <div class="swiper-slide"><img src="Images/Photo2.jpg" alt=""> </div>
-				    <div class="swiper-slide"><img src="Images/Photo1.jpg" alt=""> </div>
-				    <div class="swiper-slide"><img src="Images/Photo3.jpg" alt=""> </div>
-				    
-				  </div>
-				  <!-- Pagination -->
-				  <div class="swiper-pagination"></div>
-				  <!-- Arrows -->
-				  <div class="swiper-button-next"></div>
-				  <div class="swiper-button-prev"></div>
+						<div class="slider-container">
+		  <div class="slider">
+		    <div class="slides">
+		      <div id="slides__1" class="slide">
+		        <img src="Images/Photo2.jpg">
+		        <a class="slide__prev" href="#slides__4" title="Next"></a>
+		        <a class="slide__next" href="#slides__2" title="Next"></a>
+		      </div>
+		      <div id="slides__2" class="slide">
+		        <img src="Images/Photo1.jpg">
+		        <a class="slide__prev" href="#slides__1" title="Prev"></a>
+		        <a class="slide__next" href="#slides__3" title="Next"></a>
+		      </div>
+		      <div id="slides__3" class="slide">
+		        <img src="Images/Photo3.jpg">
+		        <a class="slide__prev" href="#slides__2" title="Prev"></a>
+		        <a class="slide__next" href="#slides__4" title="Next"></a>
+		      </div>
+		    </div>
+		    <div class="slider__nav">
+		      <a class="slider__navlink" href="#slides__1"></a>
+		      <a class="slider__navlink" href="#slides__2"></a>
+		      <a class="slider__navlink" href="#slides__3"></a>
+		      
+		    </div>
+		 	 </div>
+		</div>
+			
 				</div>
-				  
-				</section>
-			</div>
 			<div class="container_item item_2" >
 				
 
@@ -83,9 +94,7 @@
 		<!-- FOOTER -->
 
 		</div>
-		<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js'></script>
-		<script  src=" js/javascript.js">
-		</script>
+		
 		<script type="text/javascript">
 					function copyToClipboard(element) {
 			  var $temp = $("<input>");
